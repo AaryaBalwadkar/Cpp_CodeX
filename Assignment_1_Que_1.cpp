@@ -16,6 +16,6 @@ int main(){
     cout<< "Enter your Age : ";
     cin>>age;
 
-    cout<<"Hello "<<name<<" I see you are "<<age<<" years old and are currently studying at "<<college<<endl;
+    cout<<"Hello "<<name<<", I see you are "<<age<<" years old and are currently studying at "<<college<<endl;
     return 0;
 }

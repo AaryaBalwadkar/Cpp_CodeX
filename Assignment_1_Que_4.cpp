@@ -1,40 +1,48 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-int main(){
+int main()
+{
     float num1, num2, i;
     char sign;
-    cout<<"                    Calculator"<<endl;
-    cout<<endl;
-    cout<<"                    +   |   -"<<endl;
-    cout<<"                    *   |   /"<<endl;
-    cout<<endl;
+    cout << "                    Calculator" << endl;
+    cout << endl;
+    cout << "                    +   |   -" << endl;
+    cout << "                    *   |   /" << endl;
+    cout << endl;
+
+    cout << "Enter number : ";
+    cin >> num1;
+
+    cout << "Enter SIGN of the operation which you have to perform : ";
+    cin >> sign;
+
+    cout << "Enter number : ";
+    cin >> num2;
+
+    num1=abs(num1);
+    num2=abs(num2);
     
-    cout<<"Enter number : ";
-    cin>>num1;
-
-    cout<<"Enter SIGN of the operation which you have to perform : ";
-    cin>>sign;
-    
-
-    cout<<"Enter number : ";
-    cin>>num2;
-
-    if (sign=='+'){
-        cout<<"                Value = ";
-        i=num1+num2;
-    } 
-    if (sign=='-'){
-        cout<<"                Value = ";
-        i=num1-num2;
+    if (sign == '+')
+    {
+        cout << "                Value = ";
+        i = num1 + num2;
     }
-    if(sign=='*'){
-        cout<<"                Value = ";
-        i=num1*num2;
+    if (sign == '-')
+    {
+        cout << "                Value = ";
+        i = num1 - num2;
     }
-    if(sign=='/'){
-        cout<<"                Value = ";
-        i=num1/num2;
+    if (sign == '*')
+    {
+        cout << "                Value = ";
+        i = num1 * num2;
     }
-    cout<<i;
+    if (sign == '/')
+    {
+        cout << "                Value = ";
+        i = num1 / num2;
+    }
+    cout << i;
 }
